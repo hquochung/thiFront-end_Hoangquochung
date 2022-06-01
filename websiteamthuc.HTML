@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web ẩm thực</title>
+     
+    
+    </head>
+    <style>
+        *{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #E0FFFF , #FFB6C1   );
+}
+#main{
+     width: 100vw;
+}
+.logo{
+    margin-top: -20px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#header{
+        position: relative;
+        top: -96px;
+        height: 46px;
+        width: 80%;
+        margin: 0px auto;
+}
+#nav > li > a{
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#nav li a{
+    text-decoration: none;
+    display: block;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    background-color: gold;
+}
+#nav > li{
+    line-height: 46px;
+    display: inline-block;
+    position: relative;
+    padding: 0px 20px;
+}
+#nav li
+{
+    list-style: none;
+}
+#nav .subnav{
+    display: none; 
+    min-width: 160px;
+    position: absolute;
+    background-color: #FFB6C1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav a{
+    color: black;
+    line-height: 38px;
+    padding: 0px 12px;
+}
+#nav li:hover .subnav{
+    display: block
+}
+#nav .down{
+    font-size: 14px;
+}
+.login{
+    float: right;
+    line-height: 46px;
+}
+.login input{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 13pt;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+.login input:hover{
+    background-color: #FF7F50  ;
+}
+#slide{
+        width: 80%;
+        height: 400px;
+        margin: -65px auto;
+}
+#slide img{
+    margin-top: -65px;
+    width: 100%;
+    height: 100%;
+    object-fit: hidden;
+    border-radius: 4px;
+}
+#container{
+        border: 2px solid greenyellow ;
+        height: 350px;
+        width: 15%;
+        margin-top: 78px; 
+        margin-left: 138px;
+        color: #4A708B;
+        padding: 10px 10px;
+        float: left;
+        border-radius: 5px;
+        text-align: center;
+}
+#container h2{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+#container li{
+    list-style: none;
+    padding: 6px 10px;
+    font-size: 13pt;
+    cursor: pointer;
+}
+#container li:hover{
+    color: violet;
+    font-style: 20px;
+    font-weight: bold;
+}
+.card{
+    width: 263px;
+    height: 300px;
+    float: left;
+    margin: 78px 20px -72px 20px ;
+    cursor: pointer;
+    position: relative;
+}
+.card img{
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+}
+.card a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #4A708B   ;
+    display: block;
+    margin-bottom: 3px;
+}
+.card p{
+    font-style: italic;
+    color: #8B6969    ;
+}
+.card button{
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: orchid;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+.card a:hover{
+    color: violet;
+}
+.card img:hover{
+    transform: scale(1.1);
+    margin-bottom: 20px;
+}
+.card button:hover{
+    background: #FF7F50    ;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 5px solid #aaa;
+    height: 78px;
+    width: 100%;
+}
+
+.footer-section-2 {
+    display: flex;
+    align-items: center;
+}
+
+.footer-section-2 p {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.footer-section-2 ul {
+    display: inline-block;
+}
+
+.footer-section-2 li {
+    list-style: none;
+    display: inline-block;
+}
+
+.footer-section-2 li:hover {
+    opacity: 0.6;
+}
+
+.footer-section-2 li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+
+
+    </style>
+    <body>
+            <div id="main">
+                <div class="logo">
+                    <img src="./images/30.11.Dong_Nai-Van_hoa__am_thuc_la_dai_su_du_lich_1.jpg" alt="">
+                </div>
+                    <div id="header">
+                        <form class="login" action="signup.html">
+                                <input type="submit" value="Đăng kí">
+                        </form>
+                            <ul id="nav">
+                                <li><a href="#">Trang chủ</a></li>
+                                <li><a href="#">Về chúng tôi</a></li>
+                                <li><a href="#">Từ khóa</a></li>
+                                <li>
+                                    <a href="menu.html">
+                                        Menu
+                                        <i class="down ti-angle-down"></i> 
+                                    </a>
+                                    <ul class="subnav">
+                                        <li><a href="">Món ăn</a></li>
+                                        <li><a href="">Thức Uống</a></li>
+                                        <li><a href="">Món tráng miệng</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    <div id="slide">
+                            <img src="./images/ẩm thực.jpg" alt="">
+                    </div>
+
+                    <div id="container">
+                            <h2>Món ăn chính</h2>
+                            <ul>
+                                <li>Bún bò</li>
+                                <li>Cơm hến</li>
+                                <li>Chả lụa</li>
+                                <li>Bún đậu mắm tôm</li>
+                                <li>Chè</li>
+                                <li>Mắm tôm</li>
+                                <li>Bánh canh</li>
+                                <li>Bánh lộc</li>
+                            </ul>
+                    </div>
+                    <div class="card card1">
+                           <img src="./images/bun-bo-1.jpg" alt="Bún bò" title="Bún bò">
+                           <a href="#">Bún bò
+
+                           </a>
+                           <p>Xuất xứ: Huế</p>
+                           <button>Order</button>
+                    </div>
+                    <div class="card card2">
+                        <img src="./images/bún đậu mắm tôm.jpg" alt="Bún đậu mắm tôm">
+                        <a href="#">Bún đậu mắm tôm</a>
+                        <p>Xuất xứ: Huế</p>
+                        <button>Order</button>
+                    </div>
+                    <div class="card card3">
+                        <img src="./images/chả lụa.jpg" title="Chả lụa">
+                        <a href="#">Chả lụa</a>
+                        <p>Xuất xứ:Huế</p>
+                        <button>Order</button>
+                    </div>
+                    <div class="card card4">
+                        <img src="./images/cơm hến.jpg" title="Cơm hến">
+                        <a href="#">Cơm hến</a>
+                        <p>Xuất xứ: Huế</p>
+                        <button>Order</button>
+                    </div>
+                    <div class="card card5">
+                        <img src="./images/chè.jpg" alt="Chè">
+                        <a href="#">Chè</a>
+                        <p>Xuất xứ: Huế</p>
+                        <button>Order</button>
+                    </div>
+                    <div class="card card6">
+                        <img src="./images/mắm tôm.jpg" alt="Mắm tôm">
+                           <a href="#">Mắm tôm</a>
+                           <p>Xuất xứ: Huế</p>
+                           <button>Order</button>
+                    </div>
+                    <div class="card card7">
+                        <img src="./images/photo.jpg" alt="Bánh canh">
+                           <a href="#">Bánh canh</a>
+                           <p>Xuất xứ: Huế</p>
+                           <button>Order</button>
+                    </div>
+                    <div class="card card8">
+                        <img src="./images/banh-bot-loc.jpg" alt="Bánh bột lọc">
+                           <a href="#">Bánh bột lọc</a>
+                           <p>Xuất xứ: Huế</p>
+                           <button>Order</button>
+                    </div>
+                   
+            </div>
+    </body>
+    
+</html>
